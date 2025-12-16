@@ -20,7 +20,7 @@ public class TestSelect4Update {
 
   @BeforeAll
   public static void setup() {
-    mariaDB = new MariaDBContainer(DockerImageName.parse("mariadb:12.2-rc"))
+    mariaDB = new MariaDBContainer(DockerImageName.parse("mariadb:12.1.2"))
             .withInitScript("initDB.sql")
             .withDatabaseName("test")
             .withUsername("test")
